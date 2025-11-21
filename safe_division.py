@@ -1,4 +1,4 @@
-def safe_division(a, b):
+def safe_division(a, b) -> float | None:
     """
     Safely divide two numbers, preventing division by zero.
     
@@ -7,8 +7,8 @@ def safe_division(a, b):
         b: The divisor (denominator)
     
     Returns:
-        The result of a / b if b is not zero
-        None if b is zero
+        float: The result of a / b if b is not zero
+        None: If b is zero
     
     Examples:
         >>> safe_division(10, 2)
