@@ -25,7 +25,7 @@ class TestSafeDivision(unittest.TestCase):
         """Test division with boundary values"""
         self.assertEqual(safe_division(0, 5), 0.0)
         self.assertEqual(safe_division(1, 1), 1.0)
-        self.assertAlmostEqual(safe_division(1, 3), 0.3333333333333333)
+        self.assertAlmostEqual(safe_division(1, 3), 1/3, places=7)
     
     def test_division_by_zero(self):
         """Test division by zero returns None instead of raising an exception"""
