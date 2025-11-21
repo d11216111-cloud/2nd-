@@ -36,7 +36,7 @@ class TestSafeDivision(unittest.TestCase):
         """Test division with decimal numbers."""
         self.assertAlmostEqual(safe_division(10.5, 2), 5.25)
         self.assertAlmostEqual(safe_division(7.5, 2.5), 3.0)
-        self.assertAlmostEqual(safe_division(1, 3), 0.3333333333333333)
+        self.assertAlmostEqual(safe_division(1, 3), 1/3)
 
     def test_large_numbers(self):
         """Test division with large numbers."""

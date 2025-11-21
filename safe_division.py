@@ -2,10 +2,10 @@
 A module containing a safe division function that handles division by zero.
 """
 
-from typing import Union
+from typing import Optional
 
 
-def safe_division(numerator: float, denominator: float) -> Union[float, None]:
+def safe_division(numerator: float, denominator: float) -> Optional[float]:
     """
     Safely divide two numbers, handling division by zero.
     
